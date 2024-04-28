@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile - Polyglot</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: rgb(229, 227, 227);
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+        .header img {
+            max-width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .profile-container {
+            background-color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .profile-container img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .profile-info {
+            text-align: center; /* Center the profile information */
+            margin-bottom: 20px;
+        }
+        .profile-info p {
+            margin: 10px 0;
+        }
+        .footer {
+            background-color: #222222;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 40px; /* Reduced footer height */
+            border-radius: 5px; /* Added border radius */
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="/images/Black_And_White_Aesthetic_Minimalist_Modern_Simple_Typography_Coconut_Cosmetics_Logo-removebg-preview.png" alt="Polyglot Logo">
+    </div>
+    <div class="profile-container">
+        
+         <img th:if="${user.user_profile != null}" th:src="@{${user.user_profile}}" alt="User Profile Image" >
+         <img th:unless="${user.user_profile != null}" src="/images/User Images.jpg" alt="Default Profile Image" >
+        <div class="profile-info">
+            <p><strong>Name:</strong> <span th:text="${user.name}"></span></p>
+            <p><strong>Username:</strong> <span th:text="${user.username}"></span></p>
+            <p><strong> Emial:</strong> <span th:text="${user. email}"></span></p>
+             <p><strong> Dob:</strong> <span th:text="${user.dob}"></span></p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Polyglot. All rights reserved.</p>
+        <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+        <!-- Add social media icons here -->
+    </div>
+</body>
+</html>

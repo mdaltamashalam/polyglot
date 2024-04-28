@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container"> <!-- Added container for responsive padding -->
+            <a class="navbar-brand" href="Home.html">
+                <img src="/images//Black_And_White_Aesthetic_Minimalist_Modern_Simple_Typography_Coconut_Cosmetics_Logo-removebg-preview.png" alt="Logo" height="40">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Home.html">How Does It Works <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Topics.html">Courses<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Benefits<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Features <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">FAQ's<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                  <!-- User Profile Section -->
+                <div class="user-profile-section">
+                    <div class="user-profile dropdown">
+                        <a href="#" role="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img src="/images/User Images.jpg" alt="User Profile Image" class="profile-image">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="userDropdown">
+                            <!-- Dropdown items, you can add links, etc. here -->
+                            <a class="dropdown-item" th:href="@{/userprofile}">Profile</a>
+                            <a class="dropdown-item" href="MyLearning.html">My Learning</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+
+<!-- PolyGlot Master -->
+
+    <div class="container">
+        <div class="text">
+            <h1 style="font-size: 25px;">Polyglot: Master languages, unlock opportunities.</h1>
+            <p>
+                <ul>
+                <li>Expert lessons for faster learning.</li>
+                <li>Connect with native speakers. </li>
+                <li> words with community support.</li>
+
+            </p>
+        </div>
+        
+        <div class="images">
+            <div class="image-box">
+                <img src="/images/Polyglot2.jpg" alt="Language Image 1" class="image">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+
+
+<!--  Carsole is here we added  -->
+<div class="language-journey-section">
+<div class="section-heading">How Does It Works</div>
+</div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/images/carsole/Carsole 1.webp" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/images/carsole/carosole2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/images/carsole/carosole3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+
+
+
+      <div class="card text-center">
+   
+        <div class="card-body">
+          <h5 class="card-title">How Does It Works</h5>
+          <p class="card-text">Polyglot is an innovative learning platform that transcends traditional boundaries, offering a comprehensive and dynamic approach to coding education. Tailored for aspiring developers, the platform seamlessly integrates a variety of programming languages and technologies, providing a versatile learning experience.
+    
+            At the heart of Polyglot's methodology lies a commitment to fostering a deep understanding of coding principles. The platform employs a hands-on and interactive learning approach, allowing users to actively engage with coding challenges, projects, and real-world applications. This experiential learning not only solidifies theoretical knowledge but also cultivates practical skills that are vital in the ever-evolving tech landscape.
+            
+            Polyglot's curriculum covers a spectrum of programming languages, ensuring learners gain proficiency in diverse coding paradigms. From foundational languages like HTML, CSS, and JavaScript to more advanced languages such as Python, Java, and beyond, Polyglot empowers learners to become versatile and adaptable developers.
+            
+            The platform's user-friendly interface, coupled with expertly crafted lessons and projects, caters to learners of all levels. Whether you're a novice or an experienced coder looking to expand your skill set, Polyglot provides a supportive and collaborative environment.
+            
+            Through Polyglot, learners embark on a transformative journey, unlocking the doors to a world of coding possibilities. With a focus on practical application, community engagement, and continuous learning, Polyglot stands as a beacon for those eager to navigate the complexities of coding with confidence and competence.</p>
+            <a href="#" class="animated-button">Click Me</a>
+        </div>
+        <div class="card-footer text-muted">
+          2 days ago
+        </div>
+      </div>
+      <br>
+
+
+
+
+
+
+
+
+      <div class="language-journey-section">
+        
+        <div class="journey-text">
+            <h2>Courses</h2>Start Your Language Journey</div>
+        <br>
+        <div class="card-group">
+            <div class="card">
+              <img class="card-img-top" src="/images/Courses/14.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Artificial Intelligence</h5>
+                <p class="card-text">Artificial Intelligence (AI) refers to the development of computer systems that can perform tasks
+                     requiring human intelligence. It includes machine learning, natural language processing, and problem-solving 
+                     capabilities, revolutionizing various industries.</p>
+                     <a href="#" class="animated-button">Click Me</a>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="/images/Courses/15.avif" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Machine Learning</h5>
+                <p class="card-text">Machine Learning is a field of artificial intelligence that focuses on developing algorithms 
+                    and models that enable computers to learn from data with the correct outputs, make predictions, and improve performance over time.</p>
+                    <a href="#" class="animated-button">Click Me</a>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="/images/Courses/16.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">Web development involves creating and maintaining websites or web applications. It encompasses various 
+                    technologies, including HTML, CSS, JavaScript, and server-side programming languages, to build interactive and dynamic
+                     online experiences.</p>
+
+                     <a href="#" class="animated-button">Click Me</a>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container">      
+    <div class="language-journey-section">
+        <div class="section-heading">Embark on Linguistic Excellence</div>
+        </div>
+        <div class="images">
+            <div class="image-box">
+                <img src="/images/Polyglot3.jpeg" alt="Language Image 1" class="image">
+            </div>
+        </div>
+        <div class="text">
+            <h1 style="font-size: 25px;">Linguistic Mastery</h1>
+            <p>
+                <ul>
+                <li>Expert Diverse Language Selection.</li>
+                <li>Connect with Immersive Learning Experiences. </li>
+                <li> Expert-Led Instructiont.</li>
+
+            </p>
+        </div>      
+    </div>
+    <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="card text-center">
+            <div class="language-journey-section">
+                <div class="section-heading">Benefits of PolyGlot</div>
+                </div>
+            
+   
+            <div class="card-body">
+              <h5 class="card-title">Language Proficiency Amplified</h5>
+              <p  style="text-align: left;" class="card-text">
+                <ul>
+                    <li>Language Proficiency Amplified: PolyGlot enhances language skills, leading to heightened proficiency in various languages.</li>
+                    <li>Versatility through Diverse Languages: The platform offers a diverse array of languages, catering to individual preferences and expanding linguistic versatility.</li>
+                    <li>Unlocking Linguistic Potential: PolyGlot empowers learners to unlock their full linguistic potential, fostering a deeper understanding of diverse languages.</li>
+                    <li>Immersive Learning Experiences: PolyGlot provides immersive learning experiences, enabling users to engage actively with real-world language challenges and projects.</li>
+                    <li>Expert-Led Instruction: Instructors on PolyGlot are thoroughly vetted experts in their respective languages, ensuring high-quality and effective language instruction.</li>
+                    <li>Personalized Learning Plans: Learners benefit from personalized learning plans tailored to their proficiency levels, learning styles, and specific language goals.</li>
+                    <li>Flexible Offline Access: Users can download lessons in advance, allowing for flexible learning without an internet connection.</li>
+                    <li>Complimentary Trial Period: New users are encouraged to explore PolyGlot's features through a complimentary trial period, providing an opportunity to assess its suitability.</li>
+                    <li>Community Engagement: PolyGlot fosters a supportive and collaborative learning environment through community engagement and interaction.</li>
+                    <li>Progress Tracking Tools: The platform offers tools such as quizzes, assessments, and performance analytics to monitor and track language learning progress.</li>
+                </ul>
+                
+        </p>
+            </div>
+          </div>
+          <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="language-journey-section">
+            <div class="section-heading">FAQs </div>
+            </div>
+
+          <div class="faq-container">
+            <div class="faq-card">
+                <div class="faq-question">How does the platform ensure quality in language instruction?</div>
+                <div class="faq-answer">We maintain high standards by thoroughly vetting instructors, who are experts in their respective languages, and curating content to offer only the best-in-class instruction.</div>
+            </div>
+    
+            <div class="faq-card">
+                <div class="faq-question">Can I access the lessons offline?</div>
+                <div class="faq-answer">Yes, our platform allows you to download lessons in advance, enabling you to learn even without an internet connection, making learning flexible and convenient.</div>
+            </div>
+    
+            <div class="faq-card">
+                <div class="faq-question">Is there a trial period available for new users?</div>
+                <div class="faq-answer">Absolutely, new users are encouraged to take advantage of our complimentary trial period. It's a great way to explore our platform's features and decide if it's right for you.</div>
+            </div>
+        </div>
+
+
+        <div class="faq-container">
+            <div class="faq-card">
+                <div class="faq-question">Are there options for personalized learning plans?</div>
+                <div class="faq-answer">Yes, we understand that every learner is unique. That's why we offer personalized learning plans tailored to your proficiency level, learning style, and specific goals.</div>
+            </div>
+    
+            <div class="faq-card">
+                <div class="faq-question">What languages are currently offered on the platform?</div>
+                <div class="faq-answer">Our platform boasts a diverse array of languages, catering to both popular choices like Spanish and Mandarin, as well as niche languages like Swahili and Finnish.</div>
+            </div>
+    
+            <div class="faq-card">
+                <div class="faq-question">How can I track my progress in learning a language?</div>
+                <div class="faq-answer">Monitor your language proficiency with progress tracking tools, including quizzes, assessments, and performance analytics.</div>
+            </div>
+        </div>
+
+
+        <br><br>
+
+
+
+
+
+
+
+
+
+        <!-- Footer -->
+
+<footer class="animated-footer">
+    <div class="social-icons">
+        <a href="#" target="_blank" title="instagram"><img src="/Images/instagram.png" alt="instagram"></a>
+        <a href="#" target="_blank" title="LinkedIn"><img src="/Images/Linkedin logo.png" alt="LinkedIn"></a>
+    </div>
+    <p class="copyright"> © Copyright Polyglot 2024 </p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

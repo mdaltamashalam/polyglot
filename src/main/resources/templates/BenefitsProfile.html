@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container"> <!-- Added container for responsive padding -->
+            <a class="navbar-brand" th:href="@{/profile}">
+                <img src="/images//Black_And_White_Aesthetic_Minimalist_Modern_Simple_Typography_Coconut_Cosmetics_Logo-removebg-preview.png" alt="Logo" height="40">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" th:href="@{/profile}">How Does It Works <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/courses">Courses<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/BenefitsProfile">Benefits<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/FeaturesProfile">Features <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/FAQsProfile">FAQ's<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li th:if="${user.role == 'admin'}" class="nav-item active">
+                    <a class="nav-link" href="/admin">Admin<span class="sr-only">(current)</span></a>
+                </li> 
+                </ul>
+                  <!-- User Profile Section -->
+                <div class="user-profile-section">
+                    <div class="user-profile dropdown">
+        <a href="#" role="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <!-- Conditionally render the profile picture -->
+            <img th:if="${user.user_profile != null}" th:src="@{${user.user_profile}}" alt="User Profile Image" class="profile-image">
+            <img th:unless="${user.user_profile != null}" src="/images/User Images.jpg" alt="Default Profile Image" class="profile-image">
+        </a>
+        <div class="dropdown-menu" aria-labelledby="userDropdown">
+            <!-- Dropdown items, you can add links, etc. here -->
+            <a class="dropdown-item" th:href="@{/userprofile}">Profile</a>
+            <a class="dropdown-item" href="/myLearnings">My Learning</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/">Logout</a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+
+
+
+
+
+                <div class="card text-center">
+                    <div class="language-journey-section">
+                        <div class="section-heading">Benefits of PolyGlot</div>
+                        </div>
+                    
+           
+                    <div class="card-body">
+                      
+                      <p  style="text-align: left;" class="card-text">
+                        <div class="faq-container">
+                          <div class="faq-card">
+                              <div class="faq-question">Language Proficiency Amplified</div>
+                              <div class="faq-answer">PolyGlot enhances language skills, leading to heightened proficiency in various languages.</div>
+                          </div>
+                      
+                          <div class="faq-card">
+                              <div class="faq-question">Versatility through Diverse Languages</div>
+                              <div class="faq-answer">The platform offers a diverse array of languages, catering to individual preferences and expanding linguistic versatility.</div>
+                          </div>
+                      
+                          <div class="faq-card">
+                              <div class="faq-question">Unlocking Linguistic Potential</div>
+                              <div class="faq-answer">PolyGlot empowers learners to unlock their full linguistic potential, fostering a deeper understanding of diverse languages.</div>
+                          </div>
+                      </div>
+                      
+                      <div class="faq-container">
+                          <div class="faq-card">
+                              <div class="faq-question">Immersive Learning Experiences</div>
+                              <div class="faq-answer">PolyGlot provides immersive learning experiences, enabling users to engage actively with real-world language challenges and projects.</div>
+                          </div>
+                      
+                          <div class="faq-card">
+                              <div class="faq-question">Expert-Led Instruction</div>
+                              <div class="faq-answer">Instructors on PolyGlot are thoroughly vetted experts in their respective languages, ensuring high-quality and effective language instruction.</div>
+                          </div>
+                      
+                          <div class="faq-card">
+                              <div class="faq-question">Personalized Learning Plans</div>
+                              <div class="faq-answer">Learners benefit from personalized learning plans tailored to their proficiency levels, learning styles, and specific language goals.</div>
+                          </div>
+                      </div>
+                      
+                      <div class="faq-container">
+                          <div class="faq-card">
+                              <div class="faq-question">Flexible Offline Access</div>
+                              <div class="faq-answer">Users can download lessons in advance, allowing for flexible learning without an internet connection.</div>
+                          </div>
+                      
+                          <div class="faq-card">
+                              <div class="faq-question">Complimentary Trial Period</div>
+                              <div class="faq-answer">New users are encouraged to explore PolyGlot's features through a complimentary trial period, providing an opportunity to assess its suitability.</div>
+                          </div>
+                      
+                          <div class="faq-card">
+                              <div class="faq-question">Community Engagement</div>
+                              <div class="faq-answer">PolyGlot fosters a supportive and collaborative learning environment through community engagement and interaction.</div>
+                          </div>
+                      </div>
+                      
+                      <div class="faq-container">
+                          <div class="faq-card">
+                              <div class="faq-question">Progress Tracking Tools</div>
+                              <div class="faq-answer">The platform offers tools such as quizzes, assessments, and performance analytics to monitor and track language learning progress.</div>
+                          </div>
+                      </div>
+          <br>
+
+
+
+
+
+
+
+        <!-- Footer -->
+
+<footer class="animated-footer">
+    <div class="social-icons">
+        <a href="#" target="_blank" title="instagram"><img src="/Images/instagram.png" alt="instagram"></a>
+        <a href="#" target="_blank" title="LinkedIn"><img src="/Images/Linkedin logo.png" alt="LinkedIn"></a>
+          <a href="/Credits" title="Credit"><img src="/images/credits1.png" alt="Other Icon"></a>
+    </div>
+    <p class="copyright"> © Copyright Polyglot 2024 </p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

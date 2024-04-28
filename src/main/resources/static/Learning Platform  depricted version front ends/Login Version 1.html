@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+    <title>Polyglot - Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #222222;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+        .header img {
+            max-width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 400px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .login-container button {
+            background-color: #F8CF01;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .register-section {
+            background-color: #F8CF01;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 400px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background-color: #222222;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="polyglot_logo.png" alt="Polyglot Logo">
+        <a href="#" style="color: #F8CF01; text-decoration: none;">Register</a>
+    </div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" name="username" placeholder="Username or Email">
+            <input type="password" id="password" name="password" placeholder="Password">
+            <button type="button" onclick="authenticate()">Login</button>
+            <p id="errorMessage" style="color: red;"></p> 
+            
+        </form>
+    </div>
+    <div class="register-section">
+        <h2>Join Polyglot Today!</h2>
+        <p>Start your language learning journey with us.</p>
+        <a href="#" style="color: #222222; text-decoration: none;">
+            <button>Register Now</button>
+        </a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Polyglot. All rights reserved.</p>
+        <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+    </div>
+<script>
+        function authenticate() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var errorMessageElement = document.getElementById("errorMessage"); // Error message element
+
+            var apiUrl = "http://localhost:9098/api/user/" + username + "?password=" + password;
+
+            fetch(apiUrl)
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = "profile.html";
+                    } else {
+                        // Display error message
+                        errorMessageElement.textContent = "Username or password didn't match. Please try again.";
+                    }
+                })
+                .catch(error => {
+                    errorMessageElement.textContent = "Error during authentication: " + error.message; // Display error message
+                });
+        }
+    </script>
+</body>
+</html>

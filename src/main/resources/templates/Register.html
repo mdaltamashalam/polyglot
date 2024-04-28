@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Polyglot - Register</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: rgb(229, 227, 227); /* Updated background color to white */
+            text-align: center;
+            padding: 20px;
+            color: #222222; /* Updated text color to dark gray */
+        }
+        .header img {
+            max-width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .register-container {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 400px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .register-container input[type="text"],
+        .register-container input[type="email"],
+        .register-container input[type="password"],
+        .register-container input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .register-container button {
+            background-color: #4a4a4a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+        .register-container button:hover {
+            background-color: black;
+            color: white;
+        }
+        .register-container input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .footer {
+            background-color: #222222;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        
+        /* CSS Animation for select box */
+        
+	.animated-select {
+	    animation: selectFadeIn 1s ease-in-out forwards;
+	}
+	
+	@keyframes selectFadeIn {
+	    from {
+	        opacity: 0;
+	        transform: translateY(-20px);
+	    }
+	    to {
+	        opacity: 1;
+	        transform: translateY(0);
+	    }
+	}
+	
+	/* CSS Animation for button */
+	.animated-button {
+	    animation: buttonScale 0.5s ease-in-out forwards;
+	}
+	
+	@keyframes buttonScale {
+	    from {
+	        transform: scale(0);
+	    }
+	    to {
+	        transform: scale(1);
+	    }
+	}
+	
+	
+	
+	.register-container input[type="date"] {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s; /* Adding transition for smooth effect */
+}
+
+.register-container input[type="date"]:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Applying shadow on hover */
+}
+
+
+
+.register-container select.animated-select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s; /* Adding transition for smooth effect */
+}
+
+.register-container select.animated-select:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Applying shadow on hover */
+}
+
+
+
+
+
+/* Checkbox Styles */
+.custom-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hide the default checkbox */
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* On mouse-over, add a colored background */
+.custom-checkbox:hover input ~ .checkmark {
+    background-color: #f3f3f3;
+}
+
+/* When the checkbox is checked, add a checkmark */
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Show the checkmark when checked */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark using a tick icon */
+.custom-checkbox .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="/images/Black_And_White_Aesthetic_Minimalist_Modern_Simple_Typography_Coconut_Cosmetics_Logo-removebg-preview.png" alt="Polyglot Logo">
+        
+   </div>
+    <div class="register-container">
+        <h2>Register</h2>
+        <form action="/register" method="post" enctype="multipart/form-data">
+                    <input type="file" name="profilePicture" accept="image/*" ><br>
+
+            <input type="text" name="name" placeholder="Name" required><br>
+<input type="text" name="username" placeholder="Username" required><br>            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="password" name="password" id="password" placeholder="Password" required><br>
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required><br>
+            
+		<select name="gender" id="gender" class="animated-select" required>
+		    <option value="" disabled selected>Select Gender</option>
+		    <option value="male">Male</option>
+		    <option value="female">Female</option>
+		    <option value="other">Other</option>
+		</select>
+			
+			
+			
+			<br>
+			
+			
+			
+			<label> Date Of Birth : </label>
+			<input style="text-align: left;" type="date" name="DOB" placeholder="Date of Birth" value="YYYY-MM-DD" required>
+			<br>
+			<br>
+			
+		<label class="custom-checkbox">
+		    <input type="checkbox" name="agree" required>
+		    <span class="checkmark"></span>
+		    I Agree to the Terms and Conditions (Polyglot)
+		</label>
+
+            <p th:text="${error}" style="color: red;"></p><br> <br>
+            <button href="/login" type="submit">Register</button>
+        </form>
+    </div>
+    <div class="footer">
+        <!-- Footer content -->
+    </div>
+
+    <script>
+    // JavaScript for validating password match
+    document.getElementById('password').addEventListener('input', validatePassword);
+    document.getElementById('confirmPassword').addEventListener('input', validatePassword);
+
+    function validatePassword() {
+        var password = document.getElementById('password').value;
+        var confirmPassword = document.getElementById('confirmPassword').value;
+
+        if (password !== confirmPassword) {
+            document.getElementById('password').setCustomValidity("Passwords don't match");
+            document.getElementById('confirmPassword').setCustomValidity("Passwords don't match");
+        } else {
+            document.getElementById('password').setCustomValidity('');
+            document.getElementById('confirmPassword').setCustomValidity('');
+        }
+    }
+</script>
+</body>
+</html>

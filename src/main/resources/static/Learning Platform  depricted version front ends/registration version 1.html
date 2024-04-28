@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Polyglot - Register</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #222222;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+        .header img {
+            max-width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .registration-container {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 400px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .registration-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .registration-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .registration-container button {
+            background-color: #F8CF01;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #222222;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="polyglot_logo.png" alt="Polyglot Logo">
+        <a href="/login" style="color: #F8CF01; text-decoration: none;">Login</a>
+    </div>
+    <div class="registration-container">
+        <h2>Register</h2>
+        <form action="/register" method="post">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="date" name="dob" placeholder="Date of Birth" required>
+            <select name="nationality" required>
+                <option value="" disabled selected>Select Nationality</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="au">Australia</option>
+                <option value="fr">France</option>
+                <!-- Add more options as needed -->
+            </select>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="text" name="city" placeholder="City" required>
+            <input type="text" name="zip" placeholder="ZIP Code" required>
+            <!-- Add more fields as needed -->
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Polyglot. All rights reserved.</p>
+        <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+        <!-- Add social media icons here -->
+    </div>
+</body>
+</html>

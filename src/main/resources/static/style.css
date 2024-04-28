@@ -1,0 +1,1269 @@
+/* Navbar styling */
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar {
+    background-color: rgb(255, 255, 255); /* Black background */
+    animation: fadeInDown 0.5s ease; /* Apply the animation to the entire navbar */
+}
+
+/* Navbar animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navbar text color */
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important; /* White text color for navigation links */
+}
+
+
+
+/* Search input styling */
+.navbar-form .form-control {
+    background-color: #333; /* Dark gray background for search input */
+    color: #fff; /* White text color */
+    border-color: #333; /* Dark gray border color */
+}
+
+/* Search button styling */
+.navbar-form .btn {
+    background-color: #fff; /* White background for search button */
+    color: #000; /* Black text color */
+    border-color: #fff; /* White border color */
+}
+
+/* Change the search button color on hover */
+.navbar-form .btn:hover {
+    background-color: #333; /* Dark gray on hover */
+    color: #fff; /* White text color on hover */
+    border-color: #333; /* Dark gray border color on hover */
+}
+
+/* Style the navigation item */
+.nav-item.active {
+    
+    margin: 5px ;
+    border-radius: 5px; /* Border-radius of 10px */
+}
+
+/* Set text color for the navigation link */
+.nav-item.active a.nav-link {
+    color: rgb(0, 0, 0); /* White text color */
+}
+
+
+
+/* Style login and register buttons */
+.navbar-nav.ml-auto .nav-item {
+    margin-left: 10px; /* Adjust the margin between buttons */
+    flex: auto;
+}
+
+.navbar-nav.ml-auto .nav-link {
+    color: #000; /* Black text color */
+    
+    border-radius: 5px; /* Border-radius of 10px */
+    padding: 8px 15px; /* Adjust padding for better appearance */
+}
+
+/* Change the button color on hover */
+.navbar-nav.ml-auto .nav-link:hover {
+    background-color: #000000; /* Lighter yellow on hover */
+    text-decoration: none; /* Remove underline on hover */
+    color: #ffffff; /* Black text color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Polyglot master languages */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.text {
+    width: 50%;
+}
+
+.images {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-box {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 200px;
+    margin-left: 5px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.image-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-box:hover .image {
+    transform: scale(0.98);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+    width: 85%;
+    margin: auto;
+}
+
+
+
+
+/* Add this CSS to your existing stylesheet or in a separate stylesheet */
+
+#carouselExampleIndicators {
+    max-width: 85%; /* Set your desired maximum width */
+    margin: auto; /* Center the carousel */
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.carousel-item {
+    width: 100%;
+    padding-top: 30%; /* Adjust the aspect ratio and padding as needed */
+    position: relative;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Optional: Center the controls */
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add this CSS to your existing stylesheet or in a separate stylesheet */
+
+.language-journey-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f8f8;
+}
+
+.section-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.journey-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.journey-item {
+    width: 300px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.journey-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.journey-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.journey-text {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add this CSS to your existing stylesheet or in a separate stylesheet */
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Set your desired height */
+    object-fit: cover;
+    border-radius: 8px 8px 0 0; /* Optional: Add rounded corners to the top */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.text-muted {
+    font-size: 12px;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* AI Crds Images  */
+
+.AI-Cards {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.AI-Cards:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 576px) {
+    .AI-Cards {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.animated-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 9px;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: background 0.3s ease-in-out;
+}
+
+.animated-button:hover {
+    background: #2d2d2d; /* Change the color when hovered */
+    color: rgb(249, 249, 249);
+}
+
+.animated-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: width 0.3s ease-in-out;
+}
+
+.animated-button:hover::before {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.faq-container {
+    max-width: 85%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.faq-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.faq-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animated Footer Styling */
+.animated-footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Copyright Styling */
+.copyright {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add this CSS to your existing style.css or in a style block in your HTML file */
+
+/* Styling the dropdown menu */
+.user-profile .dropdown-menu {
+    min-width: 160px;
+}
+
+/* Center the dropdown menu */
+.user-profile .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+/* Styling the dropdown items */
+.user-profile .dropdown-item {
+    color: #333; /* Text color */
+}
+
+/* Styling the dropdown item on hover */
+.user-profile .dropdown-item:hover {
+    background-color: #f8f9fa; /* Hover background color */
+}
+
+/* Styling the divider line between items */
+.user-profile .dropdown-divider {
+    border-color: #ccc; /* Divider color */
+}
+
+/* Styling the user profile image */
+.user-profile .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover;
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+
+
+
+
+
+
+
+
+/* Styles for the creditme container */
+.creditme-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creditme {
+    width: 300px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin: 20px;
+}
+
+.creditme:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the card image */
+/* Styles for the card image */
+.creditme-img-top {
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+/* Styles for the card body */
+.creditme-body {
+    padding: 20px;
+}
+
+/* Styles for card title */
+.creditme-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Styles for card text */
+.creditme-text {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+/* Styles for text-muted */
+.text-muted {
+    color: #999999;
+}
+
+/* Styles for card footer */
+.creditme-footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.creditme-footer a {
+    text-decoration: none;
+    color: #50d1c0;
+    font-weight: bold;
+    padding: 8px 20px;
+    border: 2px solid #50d1c0;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.creditme-footer a:hover {
+    background-color: #50d1c0;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.admin {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  nav {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #555;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .adminit {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .adminit h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .adminit label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .adminit input[type="text"],
+  .adminit input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  
+  .adminit input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .adminit input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style file input */
+  .adminit input[type="file"] {
+    padding-top: 8px;
+    padding-bottom: 6px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  /* Style the file input button */
+  .adminit input[type="file"]::-webkit-file-upload-button {
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .adminit input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #45a049;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .card {
+    position: relative; /* Ensures proper positioning of meter and button */
+  }
+  
+
+
+  .course-info {
+    display: flex;
+    align-items: center; /* Align meter and button vertically */
+    justify-content: space-between; /* Space out meter and button */
+  }
+  
+  .course-info meter {
+    flex: 1; /* Grow to fill available space */
+    margin-right: 10px; /* Add space between meter and button */
+  }
+
+  
+
+
+
+
+  .enroll-button {
+    margin-top: 10px; /* Adjust the margin as needed */
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.userss {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .userss h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .accept-button {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  .block-button {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .content-management-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-management-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .content-management-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .content-management-form input[type="text"],
+  .content-management-form input[type="email"],
+  .content-management-form textarea,
+  .content-management-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .content-management-form select {
+    appearance: none;
+    background-color: #fff;
+  }
+  
+  .content-management-form textarea {
+    resize: vertical;
+  }
+  
+  .content-management-form input[type="file"] {
+    margin-bottom: 20px;
+  }
+  
+  .content-management-form input[type="submit"] {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .content-management-form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .search-button:hover {
+    background-color: #45a049;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .mentor-heading {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333; /* Adjust color as desired */
+    background-color: #f0f0f0; /* Adjust background color as desired */
+    padding: 10px 20px; /* Adjust padding as desired */
+    border-radius: 8px; /* Adjust border radius as desired */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Adjust margin as desired */
+  }
+  .admin {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  nav {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #555;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+ .adminit {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .adminit h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .adminit label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .adminit input[type="text"],
+  .adminit input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  
+  .adminit input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .adminit input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style file input */
+  .adminit input[type="file"] {
+    padding-top: 8px;
+    padding-bottom: 6px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  /* Style the file input button */
+  .adminit input[type="file"]::-webkit-file-upload-button {
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .adminit input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #45a049;
+  }
+  .mentor-heading {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333; /* Adjust color as desired */
+    background-color: #f0f0f0; /* Adjust background color as desired */
+    padding: 10px 20px; /* Adjust padding as desired */
+    border-radius: 8px; /* Adjust border radius as desired */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Adjust margin as desired */
+  }
+ 
