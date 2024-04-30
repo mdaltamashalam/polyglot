@@ -47,3 +47,8 @@ As we embark on this transformative journey, Polyglot remains committed to conti
 
 
 ![2024-04-30 (5)](https://github.com/mdaltamashalam/polyglot/assets/115888774/869b0bb4-1526-4e17-ac54-dd3ecffff23d)
+
+
+Copyright Rules for Polyglot:
+
+All content on Polyglot, encompassing text, graphics, videos, and interactive elements, is the exclusive intellectual property of Polyglot and its content creators, unless stated otherwise. Users are permitted to access and engage with the content solely for personal, non-commercial use, with proper attribution required when sharing or referencing. Modification, reproduction, or distribution of Polyglot's content without prior written consent is strictly prohibited, ensuring the protection of our intellectual property rights and the integrity of our platform.
