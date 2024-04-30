@@ -31,3 +31,19 @@ Learning is inherently social, and Polyglot fosters a vibrant community where le
 Future Directions
 
 As we embark on this transformative journey, Polyglot remains committed to continuous innovation and evolution. Our roadmap includes integrating emerging technologies such as augmented reality (AR), virtual reality (VR), and artificial intelligence (AI) to enhance learning outcomes and expand the boundaries of educational possibilities. Moreover, we aspire to forge strategic partnerships with educational institutions, corporations, and non-profit organizations to scale our impact and reach underserved communities worldwide.
+
+
+
+![2024-04-30](https://github.com/mdaltamashalam/polyglot/assets/115888774/0c09d447-5326-43a2-9c57-00e17d9f2e72)
+
+
+![2024-04-30 (1)](https://github.com/mdaltamashalam/polyglot/assets/115888774/3de8bf2d-2518-48bc-92aa-5b0c4f56cecc)
+
+
+![2024-04-30 (4)](https://github.com/mdaltamashalam/polyglot/assets/115888774/cd4831a4-b94c-4800-8adb-4c396ca50e0b)
+
+
+![2024-04-30 (2)](https://github.com/mdaltamashalam/polyglot/assets/115888774/f3165f4b-868a-48f0-987b-03f7baa23ed8)
+
+
+![2024-04-30 (5)](https://github.com/mdaltamashalam/polyglot/assets/115888774/869b0bb4-1526-4e17-ac54-dd3ecffff23d)
